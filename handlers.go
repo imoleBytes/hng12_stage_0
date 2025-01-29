@@ -11,7 +11,7 @@ func HandleIndex(ctx *gin.Context) {
 	data := BasicInfo{
 		Email:            "dremkay71@gmail.com",
 		Current_datetime: time.Now().UTC().Format(time.RFC3339),
-		Github_url:       "<https://github.com/imoleBytes/hng12_stage_0>",
+		Github_url:       "https://github.com/imoleBytes/hng12_stage_0",
 	}
 
 	ctx.JSON(http.StatusOK, data)

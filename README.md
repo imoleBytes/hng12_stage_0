@@ -47,15 +47,6 @@ cd hng12_stage_0
 go mod tidy
 ```
 
-### Load Environment Variables
-
-This project requires environment variables, create a .env file in the root directory and fill it up with the following credentials
-
-```
-SERVER_HOST=<desired host>
-SERVER_PORT=<desire port>
-```
-
 ### Run the Application Locally
 
 ```sh
@@ -77,7 +68,7 @@ Returns basic information in JSON format.
 #### Request
 
 - **Method:** GET
-- **URL:** `<your-deployment-url>`
+- **URL:** `https://hng12-stage-0-basic-api.onrender.com`
 
 #### Response (200 OK)
 
@@ -94,13 +85,13 @@ Returns basic information in JSON format.
 Using `curl`:
 
 ```sh
-curl -X GET <your-deployment-url>
+curl -X GET https://hng12-stage-0-basic-api.onrender.com/
 ```
 
 Using JavaScript (fetch API):
 
 ```javascript
-fetch("<your-deployment-url>")
+fetch("https://hng12-stage-0-basic-api.onrender.com/")
   .then((response) => response.json())
   .then((data) => console.log(data));
 ```

@@ -13,15 +13,12 @@ import (
 func init() {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatalf("error loading env variables: %v\n", err)
+		log.Printf("error loading env variables: %v\n", err)
 	}
 }
 func main() {
 	host := os.Getenv("SERVER_HOST")
 	port := os.Getenv("SERVER_PORT")
-	if host == "" {
-		host = "localhost"
-	}
 	if port == "" {
 		port = "8080"
 	}

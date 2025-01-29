@@ -1,7 +1,5 @@
 # hng12_stage_0
 
-A public API to retrieve basic information. The API returns the following information in JSON format: Your registered email address, the current datetime as an ISO 8601 formatted timestamp, the GitHub URL of the project's codebase.
-
 # Public API for Basic Information
 
 ## Description
@@ -39,8 +37,8 @@ Ensure you have the following installed on your machine:
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone https://github.com/imoleBytes/hng12_stage_0.git
+cd hng12_stage_0
 ```
 
 ### Install Dependencies
@@ -49,10 +47,19 @@ cd your-repo
 go mod tidy
 ```
 
+### Load Environment Variables
+
+This project requires environment variables, create a .env file in the root directory and fill it up with the following credentials
+
+```
+SERVER_HOST=<desired host>
+SERVER_PORT=<desire port>
+```
+
 ### Run the Application Locally
 
 ```sh
-go run main.go
+go run .
 ```
 
 The API will start running at `http://localhost:8080` (unless configured otherwise).
@@ -78,7 +85,7 @@ Returns basic information in JSON format.
 {
   "email": "your-email@example.com",
   "current_datetime": "2025-01-30T09:30:00Z",
-  "github_url": "https://github.com/yourusername/your-repo"
+  "github_url": "https://github.com/imoleBytes/hng12_stage_0"
 }
 ```
 
@@ -108,12 +115,6 @@ The API is deployed to a publicly accessible endpoint. Ensure that it remains av
 
 ## Contributors
 
-- **Your Name** – [GitHub Profile](https://github.com/yourusername)
+- **Imole M. Kolawole** – [GitHub Profile](https://github.com/imoleBytes)
 
 For more Go developers, visit: [Hire Go Developers](https://hng.tech/hire/golang-developers)
-
----
-
-## License
-
-This project is open-source and available under the MIT License.
